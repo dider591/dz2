@@ -1,0 +1,28 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Events;
+
+public class EntersHouse : MonoBehaviour
+{
+    [SerializeField] private AudioSource _audioSource;
+    private float _targetVolume;
+
+    private void Start()
+    {
+        _audioSource = GetComponent<AudioSource>();
+        _volume = _audioSource.volume;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (_audioSource.volume == 1.0)
+        {
+            _audioSource.volume = 0.25f;
+        }
+        if (_audioSource.volume == 0.25)
+        {
+            _audioSource.volume = 1.0f;
+        }
+    }
+}

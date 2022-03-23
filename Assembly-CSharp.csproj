@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{25C46C84-9ADA-0DA1-A26D-1EB5AF67511B}</ProjectGuid>
+    <ProjectGuid>{21FD47A0-2748-5B6F-98EF-F585D4807A93}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -54,7 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\EntersHouse.cs" />
+    <Compile Include="Assets\Scripts\AlarmSystem.cs" />
     <Compile Include="Assets\Scripts\Movement.cs" />
   </ItemGroup>
   <ItemGroup>

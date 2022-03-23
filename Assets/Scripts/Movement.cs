@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
+[RequireComponent(typeof(SpriteRenderer))]
+
 public class Movement : MonoBehaviour
 {
     private const string Walk = "Walk";

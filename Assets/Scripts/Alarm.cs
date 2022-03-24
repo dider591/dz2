@@ -33,7 +33,7 @@ public class AlarmSystem : MonoBehaviour
         StopCoroutine(_coroutine);
     }
 
-    private IEnumerator BalanceAlarmVolume()
+    private IEnumerator BalanceVolume()
     {
         while (true)
         {

@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 [RequireComponent(typeof(AudioSource))]
 
-public class Alarm : MonoBehaviour
+public class AlarmSystem : MonoBehaviour
 {
     private AudioSource _audioSource;
     private float _duration = 0.3f;
@@ -24,7 +24,7 @@ public class Alarm : MonoBehaviour
     {
         _audioSource.Play();
 
-        _coroutine = StartCoroutine(BalanceVolume());
+        _coroutine = StartCoroutine(BalanceAlarmVolume());
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -33,7 +33,7 @@ public class Alarm : MonoBehaviour
         StopCoroutine(_coroutine);
     }
 
-    private IEnumerator BalanceVolume()
+    private IEnumerator BalanceAlarmVolume()
     {
         while (true)
         {

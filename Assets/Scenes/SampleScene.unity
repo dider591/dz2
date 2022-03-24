@@ -481,7 +481,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc8832b258ca038499be3a60accf8476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 2.45
 --- !u!114 &1359274628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -995,9 +994,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1915135368}
   - component: {fileID: 1915135367}
-  - component: {fileID: 1915135366}
   - component: {fileID: 1915135365}
   - component: {fileID: 1915135364}
+  - component: {fileID: 1915135366}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -1136,10 +1135,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1915135363}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afd7cb105adda394ab3fd4c69bfe1c26, type: 3}
+  m_Script: {fileID: 11500000, guid: 527560da3290e084c891a7dd2e86e677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioSource: {fileID: 1915135365}
 --- !u!212 &1915135367
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1349,4 +1347,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afd7cb105adda394ab3fd4c69bfe1c26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioSource: {fileID: 0}

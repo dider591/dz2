@@ -22,8 +22,6 @@ public class Movement : MonoBehaviour
 
     private void Update()
     {
-        _animator.SetBool(Walk, false);
-
         if (Input.GetKey(KeyCode.D))
         {
             _spriteRenderer.flipX = false;
@@ -35,6 +33,10 @@ public class Movement : MonoBehaviour
             _spriteRenderer.flipX = true;
             _animator.SetBool(Walk, true);
             transform.Translate(_speed * Time.deltaTime * - 1, 0, 0);
+        }
+        else
+        {
+            _animator.SetBool(Walk, false);
         }
     }
 }

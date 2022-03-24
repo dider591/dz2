@@ -9,10 +9,9 @@ public class Movement : MonoBehaviour
 {
     private const string Walk = "Walk";
 
-    [SerializeField] private float _speed;
-
+    private float _speed = 1.5f;
     private Animator _animator;
-    private SpriteRenderer _spriteRenderer;   
+    private SpriteRenderer _spriteRenderer;
 
     private void Start()
     {
@@ -28,11 +27,11 @@ public class Movement : MonoBehaviour
             _animator.SetBool(Walk, true);
             transform.Translate(_speed * Time.deltaTime, 0, 0);
         }
-        if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.A))
         {
             _spriteRenderer.flipX = true;
             _animator.SetBool(Walk, true);
-            transform.Translate(_speed * Time.deltaTime * - 1, 0, 0);
+            transform.Translate(_speed * Time.deltaTime * -1, 0, 0);
         }
         else
         {

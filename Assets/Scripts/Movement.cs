@@ -27,13 +27,13 @@ public class Movement : MonoBehaviour
             _animator.SetBool(Walk, true);
             transform.Translate(_speed * Time.deltaTime, 0, 0);
         }
-        else if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
             _spriteRenderer.flipX = true;
             _animator.SetBool(Walk, true);
             transform.Translate(_speed * Time.deltaTime * -1, 0, 0);
         }
-        else
+        if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A))
         {
             _animator.SetBool(Walk, false);
         }
